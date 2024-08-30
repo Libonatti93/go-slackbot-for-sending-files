@@ -1,0 +1,11 @@
+This is code for Slackbot to automatically send files.
+
+Steps to setup:
+Configure Permissions: In the "OAuth & Permissions" section, add scopes like files:write and chat:write to allow sending messages and files.
+Get a Bot Token: Get the bot token from your app.
+
+Code Explanation:
+uploadFileToSlack: This function reads a file and uploads it to Slack using the File Upload API.
+Multipart Form: Uses a multipart form to upload the file and additional fields, such as the channel.
+Authorization: The Authorization header includes the Slack bot token, which must have the necessary permissions.
+Remember to replace slackBotToken and channelID with the appropriate values. This code will be able to upload a specified file to a channel or user in Slack.
